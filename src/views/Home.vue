@@ -32,10 +32,20 @@ export default {
                 .style('height', d => d * 10 + 'px');
         },
         addSvg() {
-            d3.select('#d3')
+            const svg = d3
+                .select('#d3')
                 .append('svg')
                 .attr('width', this.w)
                 .attr('height', this.h);
+
+            svg.selectAll('rect')
+                .data(this.dataSet)
+                .enter()
+                .append('rect')
+                .attr('x', (data, index) => index * 35)
+                .attr('y', d => this.h - d * 3)
+                .attr('width', 25)
+                .attr('height', d => d * 3);
         }
     }
 };
@@ -50,6 +60,6 @@ export default {
     background-color: blue;
 }
 svg {
-    background-color: burlywood;
+    // background-color: burlywood;
 }
 </style>
