@@ -1,16 +1,15 @@
 <template>
     <div>
-        <h1 class="text-center">Home View</h1>
-        <div class="d3"></div>
+        <div class="d3 mt-3"></div>
     </div>
 </template>
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue';
 import * as d3 from 'd3';
 export default {
     name: 'Home',
+
     data() {
         return {};
     },
