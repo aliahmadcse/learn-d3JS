@@ -12,7 +12,7 @@ export default {
     data() {
         return {
             dataSet: [12, 31, 22, 17, 25, 18, 29, 14, 9],
-            h: 100,
+            h: 200,
             w: 500
         };
     },
@@ -45,7 +45,17 @@ export default {
                 .attr('x', (data, index) => index * 35)
                 .attr('y', d => this.h - d * 3)
                 .attr('width', 25)
-                .attr('height', d => d * 3);
+                .attr('height', d => d * 3)
+                .attr('fill', 'navy');
+
+            svg.selectAll('text')
+                .data(this.dataSet)
+                .enter()
+                .append('text')
+                .attr('x', (d, i) => i * 35)
+                .attr('y', d => this.h - d * 3 - 5)
+                .text(d => d)
+                .attr('fill','red');
         }
     }
 };
@@ -58,8 +68,5 @@ export default {
     margin: 2px;
     display: inline-block;
     background-color: blue;
-}
-svg {
-    // background-color: burlywood;
 }
 </style>
