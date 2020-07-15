@@ -124,7 +124,7 @@ export default {
                 .range([h - padding, padding]);
 
             const svg = d3
-                .select('body')
+                .select('#d3')
                 .append('svg')
                 .attr('width', w)
                 .attr('height', h);
