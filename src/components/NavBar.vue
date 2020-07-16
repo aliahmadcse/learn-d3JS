@@ -27,6 +27,9 @@
                         <li class="nav-item">
                             <router-link class="nav-link" :to="{name:'About'}">About</router-link>
                         </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" :to="{name:'Practice'}">Practice</router-link>
+                        </li>
                     </ul>
                 </div>
             </div>
