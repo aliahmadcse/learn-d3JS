@@ -2,7 +2,8 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import About from '../views/About.vue';
-import Practice from '../views/Practice.vue';
+import BarChart from '../views/BarChart.vue';
+import CircularChart from '@/views/CircularChart.vue';
 
 Vue.use(VueRouter);
 
@@ -23,9 +24,14 @@ const routes = [
         //     import(/* webpackChunkName: "about" */ '@/views/About.vue')
     },
     {
-        path: '/practice',
-        name: 'Practice',
-        component: Practice
+        path: '/barchart',
+        name: 'Barchart',
+        component: BarChart
+    },
+    {
+        path: '/circularchart',
+        name: 'CircularChart',
+        component: CircularChart
     }
 ];
 
