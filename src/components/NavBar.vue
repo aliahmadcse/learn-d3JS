@@ -33,6 +33,9 @@
                         <li class="nav-item">
                             <router-link class="nav-link" :to="{name:'CircularChart'}">CircularChart</router-link>
                         </li>
+                        <li class="nav-item">
+                            <router-link class="nav-link" :to="{name:'Experiment'}">Experiment</router-link>
+                        </li>
                     </ul>
                 </div>
             </div>

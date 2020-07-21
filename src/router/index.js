@@ -4,6 +4,7 @@ import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import BarChart from '../views/BarChart.vue';
 import CircularChart from '@/views/CircularChart.vue';
+import Experiment from '@/views/Experiment.vue';
 
 Vue.use(VueRouter);
 
@@ -32,6 +33,11 @@ const routes = [
         path: '/circularchart',
         name: 'CircularChart',
         component: CircularChart
+    },
+    {
+        path: '/experiment',
+        name: 'Experiment',
+        component: Experiment
     }
 ];
 
